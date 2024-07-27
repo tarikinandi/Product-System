@@ -1,0 +1,33 @@
+﻿@model Demo_Product.Models.UserEditViewModel
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+<h1>Profil Bilgileri Düzenleme Sayfası</h1>
+
+<form method="post">
+    <div class="form-group">
+        <label for="Name">Adınız:</label>
+        <input type="text" class="form-control" asp-for="Name">
+    </div>
+    <div class="form-group">
+        <label for="Surname">Soyadınız:</label>
+        <input type="text" class="form-control" asp-for="Surname">
+    </div>
+    <div class="form-group">
+        <label for="Email">E-posta Adresiniz:</label>
+        <input type="email" class="form-control" asp-for="Email">
+    </div>
+    <div class="form-group">
+        <label for="Password">Şifreniz:</label>
+        <input type="password" class="form-control" asp-for="Password">
+    </div>
+    <div class="form-group">
+        <label for="Password">Şifre Tekrar:</label>
+        <input type="password" class="form-control" asp-for="ConfirmPassword">
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+

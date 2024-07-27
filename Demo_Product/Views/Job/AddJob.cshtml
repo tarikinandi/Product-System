@@ -1,0 +1,18 @@
+﻿@model EntityLayer.Concrete.Job
+@{
+    ViewData["Title"] = "AddJob";
+    Layout = "~/Views/Shared/_UILayout.cshtml";
+}
+
+
+<form method="post">
+    <div class="form-group">
+        <label>Meslek Adı</label>
+        <input type="text" name="Name" class="form-control" />
+    </div>
+    <br />
+    <button type="submit" class="btn btn-primary">Kaydet</button>
+</form>
+
+
+
